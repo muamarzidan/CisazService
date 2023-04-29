@@ -265,6 +265,14 @@ body{
         justify-content: center;
         align-items: center;
     }
+    .container2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5em 0 0 0;
+    }
     .container2 h3{
         text-align: center;
         font-weight: bold;
