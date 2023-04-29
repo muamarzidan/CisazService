@@ -1,51 +1,95 @@
 <!DOCTYPE html>
+<!-- CodingMaker-->
 <html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-pink.css">   
-<link rel="stylesheet" href="style.css"> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-<title>CISAZ STORE</title>
-<script src="https://unpkg.com/feather-icons"></script>
-
-  </head>
-  <body>
-    <!-- Content container -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CISAZ STORE</title>
+    <!--CSS Style-->
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ </head>
+  <body> 
     <div class="container">
 
-      <!-- Image and name container. Change to your pictue here. -->
-      <div style="text-align: center">
-        <img src="https://www.w3schools.com/howto/img_link_tree_template2_bio.jpg" class="w3-margin" alt="image" width="150px" height="150px" style="border-radius: 50%;">
-        <p><span class="name w3-padding w3-pink w3-round" style="font-weight: bolder;">CISAZ STORE</span></p>
-        <p style="font-weight: bolder; color: white;">WE ARE HERE FOR YOU</p>
+      <div class="profile">
+        <img src="assets/logo_cisaz.png" alt="id image">
+        <p>Terjangakau | Tercepat | Terpercaya</p>
       </div>
 
-      <!-- Links section 1. Replace the # inside of the "" with your links. -->
-      <h4 class="margin-top-2" style="text-align: center;">MY SOCIAL NETWORKS</h4>
-      <div class="links-container">
-        <a href="index2.html" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">Facebook</a>
-        <br>
-        <a href="#" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">Instagram</a>
-        <br>
-        <a href="#" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">Twitter</a>
-        <br>
-        <a href="#" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">Github</a>
-      </div>
+      <div class="sosial_media">
+        <ul id="item">
+            <li class="instagram"><a href="https://www.instagram.com/cisaz.baebo/" target="_blank">
+              <img src="/assets/sosig.png" alt="">
+              <span>
+                <h3>Instagram</h3>
+              </span>
+                <!-- <i class="/assets/sosig.png"></i>
+                <span>
+                    <h3>Instagram</h3>
+                </span> -->
+                </a>
+            </li>
 
-      <!-- Bottom section 3 -->
-      <div class="bottom margin-top-2 w3-padding w3-round">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-        <span style="vertical-align: 7px;"> 2021 - Jane Doe</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            <li class="whatsapp"><a href="https://wa.me/6282266530061?text=Halo20%Kak,20%saya20%mau20%order20%joki" target="_blank">
+              <img src="/assets/soswa.png" alt="">
+              <span>
+                  <h3>Whatsapp</h3>
+              </span>
+                </a>
+            </li>
+
+            <li class="shopee"><a href="https://shopee.co.id/_cisazstore" target="_blank">
+              <img src="/assets/sosshp.png" alt="">
+                  <span>
+                      <h3>Shopee</h3>
+                  </span>
+              </a>
+          </li>
+        </ul>
       </div>
+    </div>
+
+    <div class="container2">
+      <h3>Testimoni</h3>
+          <div class="row"> 
+            <div class="column">
+              <img src="assets/testi1.jpg" style="width:100%" data-aos="zoom-in" data-aos-duration="700">
+              <img src="assets/testi2.jpg" style="width:100%" data-aos="zoom-in" data-aos-duration="900">
+              <img src="assets/testi3.jpg" style="width:100%" data-aos="zoom-in" data-aos-duration="1100">
+            </div>
+            <div class="column">
+                <img src="assets/testi4.jpg" style="width:100%" data-aos="zoom-in" data-aos-duration="700">
+                <img src="assets/testi5.jpg" style="width:100%" data-aos="zoom-in" data-aos-duration="900">
+                <img src="assets/testi6.jpg" style="width:100%" data-aos="zoom-in" data-aos-duration="1100">
+            </div>
+            <div class="column">
+                <img src="assets/testi10.jpg" style="width:100%" data-aos="zoom-in" data-aos-duration="700">
+                <img src="assets/testi8.jpg" style="width:100%" data-aos="zoom-in" data-aos-duration="900">
+                <img src="assets/testi9.jpg" style="width:100%" data-aos="zoom-in" data-aos-duration="1100">
+            </div>
+          </div>
+
+          <div class="button-area">
+            <button class="bubbly-button">Order Sekarang</button>
+          </div>
 
     </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
     <script>
-      feather.replace()
+      AOS.init();
     </script>
-  </body>  
+  </body>
 </html>
+
+          <!-- <div class="btn from-top" target="_blank">
+            <a href="https://wa.me/6282266530061?text=Halo20%Kak,20%saya20%mau20%order20%joki" target="_blank">Chat Sekarang</a>
+          </div> -->
+                    <!-- <button class="bubbly-button">Click me!</button> -->
