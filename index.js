@@ -22,3 +22,7 @@ var animateButton = function (e) {
   for (var i = 0; i < bubblyButtons.length; i++) {
     bubblyButtons[i].addEventListener("click", animateButton, false);
   }
+
+  function showAlert() {
+    alert("Maaf, untuk platform tersebut tidak tersedia karena ada kebijakan baru Shopee, jadi tidak ada produk");
+}
