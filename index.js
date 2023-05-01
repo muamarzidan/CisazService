@@ -5,10 +5,8 @@ VanillaTilt.init(document.querySelectorAll(".sosial_media ul li"), {
     "max-glare": 1
 });
 
-
 var animateButton = function (e) {
     e.preventDefault;
-    //reset animation
     e.target.classList.remove("animate");
   
     e.target.classList.add("animate");
