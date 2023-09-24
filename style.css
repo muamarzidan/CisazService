@@ -13,7 +13,7 @@ a{
 }
 
 body{
-	background-image:url('assets/bg1.jpg');
+	background-image:url('assets/bg1-min.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -72,6 +72,7 @@ body{
     perspective: 500px;
     box-shadow: 0 0 0.8rem  rgba(255, 255, 255, .12);
 }
+
 .js-tilt-glare{
     border-radius: 5px;
 }
@@ -129,9 +130,8 @@ body{
 
 .row {
     margin: 20px 0 0 0;
-    display: -ms-flexbox; /* IE10 */
+    display: -ms-flexbox;
     display: flex;
-    /* flex-wrap: wrap; */
     padding: 0 4px;
   }
   .column {
@@ -150,100 +150,36 @@ body{
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
 }
-.button-area {
-    margin: 5px 0;
-}
-.bubbly-button {
-    display: inline-block;
-    font-size: 1.1em;
-    padding: 1em 3em;
-    font-weight: bold;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    -webkit-appearance: none;
-    appearance: none;
+
+.button-link {
     background-color: #ffffff;
     color: #131313;
-    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 15px 30px;
     border: none;
-    cursor: pointer;
-    position: relative;
-    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-    box-shadow: 0 2px 25px rgba(255, 255, 255, 0.5);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
-  .bubbly-button:focus {
-    outline: 0;
-  }
-  .bubbly-button:before, .bubbly-button:after {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    left: -10%;
-    z-index: -1000;
-    transition: all ease-in-out 0.5s;
-    background-repeat: no-repeat;
-  }
-  .bubbly-button:before {
-    display: none;
-    top: -75%;
-    background-image: radial-gradient(circle, #000000 20%, transparent 20%), radial-gradient(circle, transparent 20%, #0d0d0d 20%, transparent 30%), radial-gradient(circle, #0b0b0b 20%, transparent 20%), radial-gradient(circle, #131313 20%, transparent 20%), radial-gradient(circle, transparent 10%, #000000 15%, transparent 20%), radial-gradient(circle, #000000 20%, transparent 20%), radial-gradient(circle, #000000 20%, transparent 20%), radial-gradient(circle, #000000 20%, transparent 20%), radial-gradient(circle, #000000 20%, transparent 20%);
-    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
-  }
-  .bubbly-button:after {
-    display: none;
-    bottom: -75%;
-    background-image: radial-gradient(circle, #000000 20%, transparent 20%), radial-gradient(circle, #000000 20%, transparent 20%), radial-gradient(circle, transparent 10%, #000000 15%, transparent 20%), radial-gradient(circle, #000000 20%, transparent 20%), radial-gradient(circle, #000000 20%, transparent 20%), radial-gradient(circle, #000000 20%, transparent 20%), radial-gradient(circle, #000000 20%, transparent 20%);
-    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
-  }
-  .bubbly-button:active {
-    transform: scale(0.9);
-    background-color: #1d1d1d;
-    box-shadow: 0 2px 25px rgba(67, 67, 67, 0.2);
-  }
-  .bubbly-button.animate:before {
-    display: block;
-    animation: topBubbles ease-in-out 0.75s forwards;
-  }
-  .bubbly-button.animate:after {
-    display: block;
-    animation: bottomBubbles ease-in-out 0.75s forwards;
-  }
-  
-  @keyframes topBubbles {
-    0% {
-      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
-    }
-    50% {
-      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
-    }
-    100% {
-      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
-      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
-    }
-  }
-  @keyframes bottomBubbles {
-    0% {
-      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
-    }
-    50% {
-      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
-    }
-    100% {
-      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
-      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
-    }
-  }
+
+.button-link:hover {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    transition: 0.50s;
+    box-shadow: 0 0 0.8rem  rgba(255, 255, 255, .12);
+    -webkit-transition: 0.50s;
+    -moz-transition: 0.50s;
+    -ms-transition: 0.50s;
+    -o-transition: 0.50s;
+}
 
 @media only screen and (max-width: 630px) {
     .column {
-      flex: 100%;
-      max-width: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
     .row {
         margin: 20px 0 0 0;
